@@ -11,5 +11,30 @@ body{
     width: 100%;
     height: 42em;
     display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
     grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        "nav nav . ."
+        "logo . . ."
+        ". . . ."
+        "info info info farve";
+    }
+
+nav {
+    background-color: beige;
+    grid-area: nav;
 }
+
+#logo {
+    grid-area: logo;
+}
+
+#info {
+    background-color: blanchedalmond;
+    grid-area: info;
+}
+#farve {
+    background-color: blueviolet;
+    grid-area: farve;
+}
+
