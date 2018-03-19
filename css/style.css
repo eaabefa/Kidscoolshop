@@ -12,17 +12,31 @@ body{
     height: 42em;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr; 
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: 
         "nav nav . ."
         "logo . . ."
+        ". . . ."
         ". . . ."
         "info info info farve";
     }
 
 nav {
-    background-color: beige;
+    background-color:;
     grid-area: nav;
+    display: flex; 
+    justify-content: space-around;
+    align-content: flex-end;
+    
+}
+nav div {
+    background-color: gray;
+    width:50%;
+}
+
+nav img {
+    width: 100%;  
+    height: auto;
 }
 
 #logo {
@@ -32,9 +46,13 @@ nav {
 #info {
     background-color: blanchedalmond;
     grid-area: info;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
 }
 #farve {
     background-color: blueviolet;
     grid-area: farve;
+    
 }
 
