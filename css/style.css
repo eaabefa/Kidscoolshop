@@ -1,9 +1,9 @@
-body{
+body {
     box-sizing: border-box;
     background-color: darkslategrey;
     width: 90%;
     height: 100%;
-    font-family: Arial,Helvetica Neue,Helvetica,sans-serif; 
+    font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
 }
 
 #garage {
@@ -12,56 +12,72 @@ body{
     background-size: cover;
 }
 
-.container{
+#skov {
+    background-image: url(../images/elverbaggrund.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.container {
     margin: 5%;
     width: 100%;
     height: 42em;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas: 
-        "nav nav . ."
-        "logo . . ."
-        ". . . ."
-        ". . . ."
-        "info info info farve";
-    }
+    grid-template-areas: "nav nav . ." "logo . . ." ". . . ." ". . . ." "info info info farve";
+}
 
 #bilen {
     background-image: url(../images/bilen.png);
     background-size: 60%;
     background-repeat: no-repeat;
-    background-position:right;
+    background-position: center;
 }
 
 nav {
     grid-area: nav;
-    display: flex; 
+    display: flex;
     justify-content: space-around;
     align-content: flex-end;
 }
 
 nav div {
-    background-image:url(../images/bil-knap.png);
+    background-image: url(../images/bil-knap.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
     width: 50%;
-    
+}
+
+.elver-knap {
+    background-image: url(../images/lillaboks.png);
 }
 
 nav img {
-    width: 100%;  
+    width: 75%;
     height: auto;
+    margin: 15%;
+}
+
+.elver-knap img {
+    width: 40%;
+    margin: 25% 30%;
 }
 
 .pil {
-    width: 20%;
-    margin: auto;
+    width: 25%;
+    margin: auto auto auto -35px;
+    padding: 5%;
+    z-index: -1;
 }
 
 #logo {
     grid-area: logo;
+}
+
+#logo img {
+    width: 135%
 }
 
 #info {
@@ -69,22 +85,37 @@ nav img {
     display: flex;
     justify-content: space-around;
     align-content: center;
+    font-weight: bolder;
+    color: white;
 }
 
-.bil-video {
-    background-image:url(../images/bil-knap.png);
+.video {
+    background-image: url(../images/bil-knap.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: center;
+    text-align: center;
 }
 
-.bil-video img {
+.elver {
+    background-image: url(../images/lillaboks.png);
+    width: 20%;
+}
+
+.video img {
     width: 75%;
+    margin: -5% auto 15% auto
+}
+
+.elver img {
+    width: 40%;
 }
 
 #farve {
     grid-area: farve;
 }
+
 #farve img {
     width: 100%;
+    margin: 10% 2%;
 }
