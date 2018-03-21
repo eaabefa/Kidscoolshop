@@ -115,6 +115,7 @@ iframe{
     position: absolute;
     margin-top: 170px;
     margin-left: 170px;
+    z-index: 2;
 }
 
 #vid-vand{
