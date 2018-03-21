@@ -32,7 +32,7 @@ body {
     background-image: url(../images/bilen.png);
     background-size: 60%;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: 150px 190px;
 }
 
 nav {
@@ -65,11 +65,14 @@ nav img {
     margin: 25% 30%;
 }
 
+.zd{ 
+    z-index: 2;
+}
 .pil {
     width: 25%;
     margin: auto auto auto -35px;
     padding: 5%;
-    z-index: -1;
+    z-index: 1;
 }
 
 #logo {
@@ -92,7 +95,7 @@ nav img {
 .video {
     background-image: url(../images/bil-knap.png);
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: 90% 90%;
     background-position: center;
     text-align: center;
 }
