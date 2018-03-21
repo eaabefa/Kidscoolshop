@@ -113,8 +113,8 @@ nav img {
 }
 iframe{
     position: absolute;
-    margin-top: 17%;
-    margin-left: 17%;
+    margin-top: 170px;
+    margin-left: 170px;
 }
 
 #vid-vand{
@@ -151,8 +151,8 @@ iframe{
     display: none;
 }
 #vid-aira{
-    margin-left: -35%;
-    margin-top: -5%;
+    margin-left: -380px;
+    margin-top: -51px;
     z-index: 4;
     background-size: cover;
     display: none;
